@@ -1,11 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import '../src/styles/reset.css';
+import '../src/styles/module/general-module.css';
+import Chat from './components/Chat';
+import SignIn from './components/Sigin';
+import {auth} from './firebase';
+import {useAuthState} from 'react-firebase-hooks/auth';
+
+
 
 function App() {
+  const [user] = useAuthState(auth)
   return (
-    <div className="App">
-    
-    </div>
+    <>
+      {user ? <Chat/> : <SignIn/>}
+    </>
+  
   );
 }
 
