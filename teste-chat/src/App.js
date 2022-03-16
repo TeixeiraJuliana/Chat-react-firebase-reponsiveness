@@ -2,10 +2,8 @@ import '../src/styles/reset.css';
 import '../src/styles/module/general-module.css';
 import Chat from './components/Chat';
 import SignIn from './components/Sigin';
-import {auth} from './firebase';
-import {useAuthState} from 'react-firebase-hooks/auth';
-
-
+import {auth} from './firebase.js';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 function App() {
   const [user] = useAuthState(auth)
@@ -16,5 +14,4 @@ function App() {
   
   );
 }
-
 export default App;

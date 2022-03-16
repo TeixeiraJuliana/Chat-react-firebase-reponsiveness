@@ -5,6 +5,7 @@ import firebase from 'firebase';
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyBfB8ddOqBtKZwuSOSr2JSw5ROhiDnCZa4",
   authDomain: "teste-chat-react-hybri.firebaseapp.com",
+  databaseURL: "https://teste-chat-react-hybri-default-rtdb.firebaseio.com",
   projectId: "teste-chat-react-hybri",
   storageBucket: "teste-chat-react-hybri.appspot.com",
   messagingSenderId: "149654688601",

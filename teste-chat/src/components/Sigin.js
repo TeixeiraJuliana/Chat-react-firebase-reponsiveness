@@ -1,7 +1,7 @@
 import React from 'react';
-import firebase from 'firebase'
-import {auth} from '../firebase.js'
-import {Button} from '@material-ui/core'
+import firebase from 'firebase';
+import {auth} from '../firebase.js';
+import {Button} from '@material-ui/core';
 
 
 function SignIn(){
@@ -16,4 +16,4 @@ function SignIn(){
     )
 }
 
-export default SignIn
+export default SignIn;

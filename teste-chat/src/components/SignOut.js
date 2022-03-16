@@ -9,4 +9,4 @@ function SignOut(){
         </div>
     )
 }
-export default SignOut
+export default SignOut;
