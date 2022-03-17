@@ -3,6 +3,7 @@ import firebase from 'firebase';
 
 
 const firebaseApp = firebase.initializeApp({
+
   apiKey: "AIzaSyBfB8ddOqBtKZwuSOSr2JSw5ROhiDnCZa4",
   authDomain: "teste-chat-react-hybri.firebaseapp.com",
   databaseURL: "https://teste-chat-react-hybri-default-rtdb.firebaseio.com",
@@ -11,6 +12,7 @@ const firebaseApp = firebase.initializeApp({
   messagingSenderId: "149654688601",
   appId: "1:149654688601:web:d703c426885f29a5163248",
   measurementId: "G-NKHK2ZW4FW"
+
 })
 
 const db = firebaseApp.firestore()

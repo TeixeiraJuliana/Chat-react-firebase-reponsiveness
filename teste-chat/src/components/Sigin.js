@@ -6,7 +6,7 @@ import {Button} from '@material-ui/core';
 
 function SignIn(){
     function signImwithGoogle(){
-        const provider = new firebase.auth.GithubAuthProvider()
+        const provider = new firebase.auth.GoogleAuthProvider()
         auth.signInWithPopup(provider)
     }
     return(
