@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { db, auth } from '../firebase';
 import firebase from 'firebase';
-import { Input, Button } from '@material-ui/core';
+import send from '../assets/img/send.png'
+
 
 function SendMessage({ scroll }) {
     const [msg, setMsg] = useState('')
@@ -20,11 +21,13 @@ function SendMessage({ scroll }) {
         scroll.current.scrollIntoView({ behavior: 'smooth' })
     }
     return (
-        <div>
+        <div className='m-content-footer-chat m-flexibilize'>
             <form onSubmit={sendMessage}>
-                <div className="sendMsg">
-                    <Input className="inputSendMsg" placeholder='Message...' type="text" value={msg} onChange={e => setMsg(e.target.value)} />
-                    <Button className="buttonSendMsg" type="submit">Send</Button>
+                <div className="sendMsg m-flexibilize">
+                    <input className="inputSendMsg" placeholder='Message...' type="text" value={msg} onChange={e => setMsg(e.target.value)}></input>
+                    <button className="buttonSendMsg" type="submit">
+                      <img  id='m-goOut' src={send}/>
+                    </button>
                 </div>
             </form>
         </div>

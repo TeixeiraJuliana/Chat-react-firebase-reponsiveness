@@ -10,7 +10,7 @@ function SignIn(){
         auth.signInWithPopup(provider)
     }
     return(
-        <div className='m-signIn'>
+        <div className='m-signIn m-flexibilize'>
             <Button className='buttonSignIn' onClick={signImwithGoogle}>Login com Google</Button>
         </div>
     )

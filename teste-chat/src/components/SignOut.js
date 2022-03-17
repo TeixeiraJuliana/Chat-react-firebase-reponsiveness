@@ -1,11 +1,14 @@
 import React from 'react';
 import { auth } from '../firebase.js'
-import { Button } from '@material-ui/core'
+import goout from '../assets/img/goout.png'
+
 
 function SignOut(){
     return (
-        <div className='siginOut'>
-            <Button className='buttonSiginOut' onClick={() => auth.signOut()}>Sair</Button>
+        <div className='siginOut m-flexibilize'>
+            <button className='buttonSiginOut' onClick={() => auth.signOut()}>
+            <img  id='m-goOut' src={goout}/>
+            </button>
         </div>
     )
 }

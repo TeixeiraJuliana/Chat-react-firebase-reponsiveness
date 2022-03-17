@@ -1,0 +1,30 @@
+:root {
+    --color-neutral:#F3F3F3;
+    --color-purple-strong:#5c2c94;
+    --color-blue-strong: #04acec;
+    --color-blue-light: #04acec;
+    --color-purple-light: #f1e2ff;
+    --color-blue-extra-light: #d9eaff;
+  }
+
+.m-container-chat{
+    background-color: var(--color-blue-extra-light);
+    
+}
+.msgs{
+    background-color: var(--color-neutral);
+    
+}
+#m-text-msg{
+    background-color: var(--color-purple-light); 
+}
+.m-content-footer-chat{
+
+}
+.m-content-footer-chat input{
+    border: 1px solid var(--color-blue-strong);
+}
+.sendMsg button{
+    background-color: transparent;
+    color: var(--color-purple-strong);
+}

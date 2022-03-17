@@ -12,11 +12,12 @@ function Chat() {
         })
     }, [])
     return (
-        <div>
-            <SignOut />
+        <div className='container-body-chat m-flexibilize'>
+             
             <div className="msgs">
+            <SignOut />
                 {messages.map(({ id, text, photoURL, uid }) => (
-                    <div>
+                    <div id='m-text-msg'>
                         <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                             <img src={photoURL} alt="" />
                             <p>{text}</p>
