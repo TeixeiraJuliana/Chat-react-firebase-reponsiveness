@@ -10,3 +10,9 @@
     background-color: rgb(71, 65, 65);
     color: aliceblue;
 }
+.msgs{
+    background-color: red;
+    width: 600px;
+    height: 600px;
+    color: black;
+}
