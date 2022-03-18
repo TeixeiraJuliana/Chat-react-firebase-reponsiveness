@@ -2,16 +2,17 @@
     display: flex;
     align-items: center;
 }
+
 .m-signIn, .m-container-chat{
     width: 100vw;
     height: 100vh;
     justify-content: center;
+    overflow: hidden;
+}
+.m-container-chat{
+    flex-direction: column;
 }
 
-.m-signIn button{
-    background-color: rgb(71, 65, 65);
-    color: aliceblue;
-}
 .m-container-chat{
     display: flex;
     justify-content: center;
@@ -19,41 +20,75 @@
 }
 .container-body-chat{
     flex-direction: column;
-    width: 1200px;
+    width: 100%;
     height: 100%;
-  
+    padding: 0px 150px 0px;
 }
 
 .msgs{
     width: 100%;
-    height: 100%;
-    margin-top: 50px;
+    min-height: 350px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
+    flex-direction: column; 
+    align-items: center;
     border-radius: 10px;
     position: relative;
+    overflow-x: auto;
+    padding: 20px;
+    
+ 
 }
-#m-text-msg{
+
+.msgs::-webkit-scrollbar {
+    width: 15px; 
+    
+  }
+
+.m-text-msg{
     width: 100%;
-    display: flex;
-    text-align: start;
-    height: 100px;
     position: relative;
-    padding-left: 40px;
     margin-top: 10px;
-    align-items: center;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
 }
-#m-text-msg img{
+.sent, 
+.received{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    min-height: 62px;  
+    padding: 20px 100px;
+    margin: 5px;
+}
+.sent img, 
+.received img{
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    right: 5px;
-    top: 5px;
 }
+.sent p, 
+.received p{
+    width: 100%;
+}
+.received img{
+    right: 15px;
+    top: 15px;
+}
+.sent  img{
+    left: 15px;
+    top: 15px;
+}
+
+.sent {
+    border-top-right-radius: 1000px;
+    text-align: end;
+
+  }
+  .received { 
+    border-top-left-radius: 1000px;
+    text-align: start;
+  }
+
 .m-content-footer-chat{
     width: 100%;
 }
@@ -62,7 +97,6 @@
     height: 60px;
     margin: 50px;
     border-radius: 5px;
-   
 }
 .m-content-footer-chat{
     width: 100%;
@@ -85,11 +119,21 @@
     width: 100%;
     padding: 0px 50px;
     justify-content: center;
+    margin: 20px;
+    border-radius: 5px;
 }
 .sendMsg button, 
 .siginOut button{
     border: none;
     margin: 10px;
+}
+.m-header-chat{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.m-header-chat img{
+    width: 150px;
 }
 .siginOut img, 
 .sendMsg img{

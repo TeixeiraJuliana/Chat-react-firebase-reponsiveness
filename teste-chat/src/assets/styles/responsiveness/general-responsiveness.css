@@ -1,6 +1,32 @@
 @media only screen and (max-width: 500px) {
-    .sendMsg{
-        flex-direction: column;
-
+    
+    .msgs{
+        min-height: 500px;
+    }
+    .sent, 
+    .received{
+        padding: 0;
+        text-align: center;
+        border-radius: 0px;
+    }
+    .sent img, 
+    .received img{
+        fill-opacity: inherit;
+    }
+    .sent p, 
+    .received p{
+        width: 100%; 
+        z-index: 1;
+        font-weight: 200;
+    }
+    .sendMsg img{
+        width: 30px;
+    }
+    .container-body-chat{
+        width: 100%;
+        padding: 0px 50px 0px;
+    }
+    .sendMsg input{
+        height: 100%;
     }
 }

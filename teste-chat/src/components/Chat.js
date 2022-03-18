@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { db, auth } from '../firebase';
 import SendMessage from './SendMessage';
 import SignOut from './SignOut';
+import logo from '../assets/img/logo.png'
 
 function Chat() {
     const scroll = useRef()
@@ -13,12 +14,14 @@ function Chat() {
     }, [])
     return (
         <div className='container-body-chat m-flexibilize'>
-             
-            <div className="msgs">
+                  <div className='m-header-chat'>
+         <img  id='logo' src={logo}/>
+      </div>
             <SignOut />
+            <div className="msgs">
                 {messages.map(({ id, text, photoURL, uid }) => (
-                    <div id='m-text-msg'>
-                        <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
+                    <div className='m-text-msg'>
+                        <div   key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
                             <img src={photoURL} alt="" />
                             <p>{text}</p>
                         </div>

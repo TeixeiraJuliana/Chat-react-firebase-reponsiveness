@@ -1,8 +1,10 @@
 import '../src/assets/styles/reset.css';
 import '../src/assets/styles/module/general-module.css';
 import '../src/assets/styles/theme/general-theme.css';
-import '../src/assets/styles/responsiveness/general-responsiveness.css'; 
 import '../src/assets/styles/state/general-state.css'; 
+import '../src/assets/styles/responsiveness/general-responsiveness.css'; 
+
+
 import Chat from './components/Chat';
 import SignIn from './components/Sigin';
 import {auth} from './firebase.js';
@@ -14,7 +16,6 @@ function App() {
     <div className='m-container-chat'>
       {user ? <Chat/> : <SignIn/>}
     </div >
-  
   );
 }
 export default App;

@@ -6,20 +6,28 @@
     --color-purple-light: #f1e2ff;
     --color-blue-extra-light: #d9eaff;
   }
+  .m-signIn button{
+    background-color: rgb(71, 65, 65);
+    color: var(--color-purple-light); 
+}
+.m-signIn button{
+    background-color: var(--color-purple-light);
+    color: aliceblue; 
+}
+
+.m-signIn button{
+    background-color: rgb(71, 65, 65);
+    color: var(--color-purple-light); 
+}
 
 .m-container-chat{
     background-color: var(--color-blue-extra-light);
-    
+}
+.siginOut{
+    background-color: var(--color-neutral);
 }
 .msgs{
     background-color: var(--color-neutral);
-    
-}
-#m-text-msg{
-    background-color: var(--color-purple-light); 
-}
-.m-content-footer-chat{
-
 }
 .m-content-footer-chat input{
     border: 1px solid var(--color-blue-strong);
@@ -27,4 +35,12 @@
 .sendMsg button{
     background-color: transparent;
     color: var(--color-purple-strong);
+}
+.sent{
+    background-color: var(--color-blue-extra-light);
+
+}
+.received{
+    background-color: var(--color-purple-light);
+
 }
